@@ -57,16 +57,14 @@ window.addEventListener('scroll',()=>{
 
 
 
-
-
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Vou fazer um mini Game!", "Ou talvez um conversor de arquivos...?"
 , "Quem sabe uma calculadora de sono...?", "Aguarde! Será legal :D"];
-const typingDelay = 70;
-const erasingDelay = 30;
-const newTextDelay = 2000; // Delay between current and next text
+let typingDelay = 70;
+let erasingDelay = 30;
+let newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -102,12 +100,3 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-
-const menuItens=docuemtn.querySelectorAll('#src');
-menuItens.forEach(item=>{
-    item.addEventListener('click',scrollToIdOnClick);
-})
-
-function scrollToIdOnClick(){
-    console.log('FOI');
-}
