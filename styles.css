@@ -107,6 +107,22 @@ header ul li a:visited{
     color: rgb(0, 255, 255);
     font-size: 2rem;font-weight: 200;
 }
+.typedtext {
+    border-right: 2px solid black;
+    animation: blinkTextCursor 800ms steps(44) infinite normal;
+    height: 40px;
+    color: rgb(255, 0, 255);
+    display: block;
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
 .hero span{
     color: rgb(0, 255, 255);
     font-size: 1.5rem;
@@ -238,6 +254,7 @@ header ul li a:visited{
     color: white;
     padding: 5px;
     font-size: 18px;
+    list-style:square;
 }
 .li1:hover{
     color: rgb(0, 255, 255);
@@ -501,7 +518,7 @@ button:hover:after{
 }
 .text-digite {
   padding-top: 20px;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
