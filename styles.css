@@ -113,6 +113,7 @@ header ul li a:visited{
     height: 40px;
     color: rgb(255, 0, 255);
     display: block;
+    font-size: 26px;
   }
   
   @keyframes blinkTextCursor {
@@ -284,7 +285,6 @@ header ul li a:visited{
     width: 300px;
     border-radius: 5px;
     transition: 0.5s ease-in-out;
-    
 }
 .img-text img,.imagem{
     height: 100%;
@@ -326,23 +326,39 @@ header ul li a:visited{
 }
 .item-work .p1{
     width: 300px;
+    height: calc(auto + 20px);
     position: relative;
     bottom: 340px;
     left: 400px;
+    padding: 20px;
     color: white;
     font-size: 20px;
     font-weight: 100;
     text-align: calc(left + 10px);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    border:2px solid transparent;
+    border-radius: 10px;
 }
 .item-work .p2{
     width: 300px;
+    height: calc(auto + 20px);
     position: relative;
+    padding: 20px;
     bottom: 340px;
     left:40px ;
     color: white;
     font-size: 20px;
     font-weight: 100;
     text-align: calc(left + 10px);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    border:2px solid transparent;
+    border-radius: 10px;
+}
+.item-work .p2:hover,.item-work .p1:hover{
+    border:2px solid rgb(0, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .img-work{
