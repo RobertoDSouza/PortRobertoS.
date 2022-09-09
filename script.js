@@ -56,7 +56,7 @@ window.addEventListener('scroll',()=>{
 
 
 function typingEffect() {
-  const contactTexts = shuffleArray(['HTML + CSS','Bootstrap',
+  const contactTexts = shuffleArray(['HTML ','SASS + CSS','Bootstrap',
   'JavaScript ES6', 'React JS','Node Js','API', 'React Hooks','Git']);
   const typedtext = document.getElementsByClassName("typedtext")[0];
   let removing = false;
