@@ -41,7 +41,7 @@ header .contas{
     list-style: none;
     position: absolute;
     top: 55px;
-    left: 280px;
+    left: 250px;
 }
 .contas li{
     padding: 10px;
@@ -80,7 +80,7 @@ header ul li a:visited{
         top: 101px;
     }
     header .contas{
-        left: 260px;
+        left: 240px;
     }
     header ul li{
         padding: 5px;
@@ -198,8 +198,8 @@ header ul li a:visited{
         font-size: 12px;
     }
     header .contas{
-        top: 35px;
-        left: 160px;
+        top: 55px;
+        left: 150px;
     }
     .hero h1{
         font-size: 5rem;
@@ -258,10 +258,26 @@ header ul li a:visited{
 }
 .li1:hover{
     color: rgb(0, 255, 255);
-    transform: scale(1.05);
+    transform: scale(1.1);
+    list-style: none;
+    text-shadow: 0 0 10px rgb(0, 255, 255),
+                 0 0 20px rgb(0, 255, 255), 
+                0 0 30px rgb(0, 255, 255), 
+                0 0 40px rgb(0, 255, 255),
+                0 0 50px rgb(0, 255, 255),
+                0 0 60px rgb(0, 255, 255), 
+                0 0 70px rgb(0, 255, 255);
 }.li2:hover{
     color: rgb(255, 0, 255);
-    transform: scale(1.05);
+    transform: scale(1.1);
+    list-style: none;
+    text-shadow: 0 0 10px rgb(255, 0, 255),
+                 0 0 20px rgb(255, 0, 255), 
+                0 0 30px rgb(255, 0, 255), 
+                0 0 40px rgb(255, 0, 255),
+                0 0 50px rgb(255, 0, 255),
+                0 0 60px rgb(255, 0, 255), 
+                0 0 70px rgb(255, 0, 255);
 }
 .img-text{
     height: 350px;
@@ -275,6 +291,7 @@ header ul li a:visited{
     width: 100%;
     transition: 0.5s ease-in-out;
     filter: grayscale(100);
+    border-radius: 5px;
 }
 .img-text img:hover,.imagem:hover{
     filter: none;
@@ -459,6 +476,7 @@ input,textarea{
     border-radius: 5px;
 }
 
+
 input:hover,textarea:hover{
     border: 2px solid  rgb(0, 255, 255);
 }
@@ -466,7 +484,7 @@ input:hover,textarea:hover{
     height: 150px;
 }
 button{
-    width: 300px;
+    width: 220px;
     height: 60px;
     background-color: rgba(20,20,20,1);
     border: none;

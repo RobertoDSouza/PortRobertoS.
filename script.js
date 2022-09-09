@@ -68,7 +68,7 @@ function typingEffect() {
       if (char < contactTexts[idx].length) typedtext.innerHTML += contactTexts[idx][char];
 
       // 15*150ms = time before starting to remove characters
-      if (char == contactTexts[idx].length + 5) removing = true;
+      if (char == contactTexts[idx].length + 4) removing = true;
 
       // Removing characters, the last one always
       if (removing) typedtext.innerHTML = typedtext.innerHTML.substring(0, typedtext.innerHTML.length - 1);
@@ -86,7 +86,7 @@ function typingEffect() {
           removing = false; // No more removing characters
       }
 
-  }, 150); // Typing speed, 150 ms
+  }, 90); // Typing speed, 150 ms
 
 }
 typingEffect();
