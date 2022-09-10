@@ -41,7 +41,7 @@ header .contas{
     list-style: none;
     position: absolute;
     top: 55px;
-    left: 250px;
+    left: 120px;
 }
 .contas li{
     padding: 10px;
@@ -57,6 +57,18 @@ header ul li a,header ul li a:hover,header ul li a:active,
 header ul li a:visited{
     text-decoration: none;
     color: rgb(197, 197, 197);
+}
+#cur{
+    display: block;
+    text-align: right;
+}
+#cur #textcur {
+    font-size: 15px;
+    width: 100px;
+    color: rgb(0, 255, 255);
+    transition: 0.2s ease-in-out;
+    display: block;
+    opacity: 0;
 }
 
 @media (max-width:810px){
@@ -80,7 +92,7 @@ header ul li a:visited{
         top: 101px;
     }
     header .contas{
-        left: 240px;
+        left:70px;
     }
     header ul li{
         padding: 5px;
@@ -95,6 +107,7 @@ header ul li a:visited{
     height: auto;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 150px;
 }
 .hero h1{
@@ -200,7 +213,7 @@ header ul li a:visited{
     }
     header .contas{
         top: 55px;
-        left: 150px;
+        left: 20px;
     }
     .hero h1{
         font-size: 5rem;

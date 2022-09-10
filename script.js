@@ -1,3 +1,15 @@
+var downcur = document.querySelector("#cur");
+var textocur= document.querySelector("#textcur");
+
+  downcur.addEventListener("mouseover",()=>{
+      textocur.style.opacity="1";
+});
+downcur.addEventListener("mouseout",()=>{
+  textocur.style.opacity="0";
+});
+
+
+
 document.getElementById('mbr').addEventListener('click',()=>{
     window.open('https://robertodsouza.github.io/MBritoEng/', '_blank');
 });
@@ -116,7 +128,7 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Vou fazer um mini Game!", "Ou talvez um conversor de arquivos...?"
-, "Quem sabe uma calculadora de sono...?", "Aguarde! Será legal :D"];
+, "Quem sabe uma Dashboard...?", "Aguarde! Vai ser legal !"];
 let typingDelay = 70;
 let erasingDelay = 30;
 let newTextDelay = 2000; // Delay between current and next text
@@ -154,4 +166,6 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
 
